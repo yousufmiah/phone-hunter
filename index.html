@@ -17,9 +17,9 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="bgBack" >
     <section class="container mx-auto mt-5">
-      <h2 class="text-center">Search Mobile</h2>
+      <h2 class="text-center text-success">Search<span> <img class="mSize" src="./images/search.png" alt=""> </span> Mobile</h2>
 
       <!-- search part ================== -->
       <div class="input-group mb-3 w-50 mx-auto">
@@ -30,7 +30,7 @@
           placeholder="Search Your Mobile"
           aria-label="Search Your Mobile"
         />
-        <button onclick="getMobile()" class="btn btn-primary" type="button">
+        <button onclick="searchBtn()" class="btn btn-primary" type="button">
           Search
         </button>
       </div>
@@ -66,7 +66,10 @@
         id="image-mobile"
         class="row row-cols-1 row-cols-lg-3 g-5 mx-auto"
       ></div>
-    </section>
+
+      <!-- More button -->
+      <!-- <button onclick="displayMobiles()">Show More...</button>
+    </section> -->
 
     <!-- ========js link================ -->
     <script

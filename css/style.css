@@ -4,3 +4,13 @@
     display:none
 }
 
+.mSize{
+    width: 70px;
+    height: 70px;
+}
+.bgBack{
+    background-image: url('/images/img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}

@@ -9,7 +9,7 @@ const toggleSpinner = (displayStyle) => {
 };
 
 // Search Button ===========================
-const getMobile = () => {
+const searchBtn = () => {
   document.getElementById("image-mobile").innerHTML = "";
   document.getElementById("mobile-details").innerHTML = "";
   document.getElementById("found-dataR").innerHTML = "";
@@ -37,22 +37,21 @@ const getMobile = () => {
   }
 
   //display Mobile image==========================
-  const displayMobiles = (mobiles) => {
-    console.log(mobiles);
+  const displayMobiles = (mobilePhone) => {
+    // console.log(mobiles);
 
-    const mob = mobiles.slice(0, 20);
+    const phone = mobilePhone.slice(0, 20);
     //   console.log(mob);
 
     //data count====================================
-    if (mob == 0) {
+    if (phone == 0) {
       dataCountR.innerText = `Results not found !`;
-    } else if (mob.length > 1) {
-      dataCount.innerText = `${mob.length} results found for ${searchText} `;
-    } else if (mob.length == 1) {
-      dataCount.innerText = `${mob.length} results found for ${searchText} `;
+    } else if (phone.length > 1) {
+      dataCount.innerText = `${phone.length} results found for ${searchText} `;
+    } else if (phone.length == 1) {
+      dataCount.innerText = `${phone.length} results found for ${searchText} `;
     }
-
-    mob.forEach((mobile) => {
+    phone.forEach((mobile) => {
       // mob.forEach((mobile) => {
       // console.log(mobile);
 
@@ -60,12 +59,12 @@ const getMobile = () => {
       const div = document.createElement("div");
       div.classList.add("col");
       div.innerHTML = `
-    <div class="card h-100">
+    <div class="card h-100 shadow p-3 bg-body rounded">
           <img src="${mobile.image}" class="card-img-top" alt="..." />
-          <div class="card-body">
+          <div class="card-body col text-center">
             <h5 class="card-title"><strong>Name:</strong> ${mobile.phone_name}</h5>
             <h6><strong>Brand:</strong> ${mobile.brand}</h6>
-            <div class="card-footer bg-gray col text-center">
+            <div class="card-footer bg-gray ">
             <button class="btn btn-primary px-5 " onclick="mobileDetail('${mobile.slug}')">Details</button>
             </div>
           </div>
