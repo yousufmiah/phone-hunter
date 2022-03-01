@@ -119,12 +119,12 @@ const mobilePhoto = (mCard) => {
   )}</small> <br>
 <br>
 <small><strong>Others:</strong> <br>
-<small><strong>Bluetooth:</strong> ${mCard.data.others.Bluetooth}</small> <br>
-<small><strong>GPS:</strong> ${mCard.data.others.GPS}</small> <br>
-<small><strong>NFC:</strong> ${mCard.data.others.NFC}</small> <br>
-<small><strong>Radio:</strong> ${mCard.data.others.Radio}</small> <br>
-<small><strong>USB:</strong> ${mCard.data.others.USB}</small> <br>
-<small><strong>WLAN:</strong> ${mCard.data.others.WLAN}</small> <br>
+<small><strong>Bluetooth:</strong> ${mCard.data.others?.Bluetooth}</small> <br>
+<small><strong>GPS:</strong> ${mCard.data.others?.GPS}</small> <br>
+<small><strong>NFC:</strong> ${mCard.data.others?.NFC}</small> <br>
+<small><strong>Radio:</strong> ${mCard.data.others?.Radio}</small> <br>
+<small><strong>USB:</strong> ${mCard.data.others?.USB}</small> <br>
+<small><strong>WLAN:</strong> ${mCard.data.others?.WLAN}</small> <br>
    
   </div>
   </div>
