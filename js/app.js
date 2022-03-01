@@ -38,10 +38,10 @@ const searchBtn = () => {
 
   //display Mobile image==========================
   const displayMobiles = (mobilePhone) => {
-    // console.log(mobiles);
+    // console.log(mobilePhone);
 
     const phone = mobilePhone.slice(0, 20);
-    //   console.log(mob);
+    //   console.log(phone);
 
     //data count==================================
     if (phone == 0) {
@@ -52,8 +52,7 @@ const searchBtn = () => {
       dataCount.innerText = `${phone.length} results found for ${searchText} `;
     }
     phone.forEach((mobile) => {
-      // mob.forEach((mobile) => {
-      // console.log(mobile);
+      // console.log(phone);
 
       const imageMobile = document.getElementById("image-mobile");
       const div = document.createElement("div");
@@ -83,7 +82,8 @@ const searchBtn = () => {
 
 // Mobile details====================================
 const modalCardDetail = (id) => {
-  console.log(id);
+  // console.log(id);
+
   const url = `https://openapi.programming-hero.com/api/phone/${id}`;
   fetch(url)
     .then((res) => res.json())
@@ -91,7 +91,8 @@ const modalCardDetail = (id) => {
 };
 
 const modalBox = (mdCard) => {
-  // console.log(mCard.data);
+  // console.log(mCard);
+
   document.getElementById("modal-Box").innerHTML = "";
   const modalDeails = document.getElementById("modal-Box");
   const div = document.createElement("div");
