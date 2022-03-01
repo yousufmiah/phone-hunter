@@ -9,12 +9,14 @@
     height: 70px;
 }
 
+/* background color */
 .bgBack{
     background-image: url('/images/img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
 }
+
 
 .textColor{
     color:rgb(17, 49, 194);
@@ -24,3 +26,4 @@
 .textGreen{
     color:rgb(6, 173, 6)
 }
+
