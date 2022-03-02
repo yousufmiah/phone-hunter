@@ -40,17 +40,18 @@ const searchBtn = () => {
   const displayMobiles = (mobilePhone) => {
     // console.log(mobilePhone);
 
+    //data count==================================
+    if (mobilePhone == 0) {
+      dataCountR.innerText = `Results not found !`;
+    } else if (mobilePhone.length > 1) {
+      dataCount.innerText = `${mobilePhone.length} results found for ${searchText} `;
+    } else if (mobilePhone.length == 1) {
+      dataCount.innerText = `${mobilePhone.length} results found for ${searchText} `;
+    }
+
     const phone = mobilePhone.slice(0, 20);
     //   console.log(phone);
 
-    //data count==================================
-    if (phone == 0) {
-      dataCountR.innerText = `Results not found !`;
-    } else if (phone.length > 1) {
-      dataCount.innerText = `${phone.length} results found for ${searchText} `;
-    } else if (phone.length == 1) {
-      dataCount.innerText = `${phone.length} results found for ${searchText} `;
-    }
     phone.forEach((mobile) => {
       // console.log(phone);
 
