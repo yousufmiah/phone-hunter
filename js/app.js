@@ -136,12 +136,24 @@ const modalBox = (mdCard) => {
   <small><strong>Others:</strong> <br> 
   <small><strong>Bluetooth:</strong> ${
     mdCard.data.others?.Bluetooth
+      ? mdCard.data.others?.Bluetooth
+      : "Not Available"
   }</small> <br>
-  <small><strong>GPS:</strong> ${mdCard.data.others?.GPS}</small> <br>
-  <small><strong>NFC:</strong> ${mdCard.data.others?.NFC}</small> <br>
-  <small><strong>Radio:</strong> ${mdCard.data.others?.Radio}</small> <br>
-  <small><strong>USB:</strong> ${mdCard.data.others?.USB}</small> <br>
-  <small><strong>WLAN:</strong> ${mdCard.data.others?.WLAN}</small> <br>
+  <small><strong>GPS:</strong> ${
+    mdCard.data.others?.GPS ? mdCard.data.others?.GPS : "Not Available"
+  }</small> <br>
+  <small><strong>NFC:</strong> ${
+    mdCard.data.others?.NFC ? mdCard.data.others?.NFC : "Not Available"
+  }</small> <br>
+  <small><strong>Radio:</strong> ${
+    mdCard.data.others?.Radio ? mdCard.data.others?.Radio : "Not Available"
+  }</small> <br>
+  <small><strong>USB:</strong> ${
+    mdCard.data.others?.USB ? mdCard.data.others?.USB : "Not Available"
+  }</small> <br>
+  <small><strong>WLAN:</strong> ${
+    mdCard.data.others?.WLAN ? mdCard.data.others?.WLAN : "Not Available"
+  }</small> <br>
    
   </div>
   </div>
